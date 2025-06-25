@@ -14,7 +14,7 @@ const DetailsInputForm = () => {
         email: "",
         gender: "",
         city: [],
-        currentLocation: ""
+        currentLocation: "Hyderabad"
     })
 
    const navigate = useNavigate()
@@ -126,7 +126,7 @@ const DetailsInputForm = () => {
                         </div>
                     </div>
                     <div>
-                        <select name="currentLocation" id="" onChange={handleOnChange}>
+                        <select name="currentLocation" id="" value={userDetails.currentLocation} onChange={handleOnChange}>
                             <option value="">Select</option>
                             <option value="Hyderabad">Hyderabad</option>
                             <option value="Bangalore">Bangalore</option>
